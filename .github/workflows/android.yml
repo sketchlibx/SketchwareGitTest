@@ -20,16 +20,13 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Install Gradle
+      run: sudo apt-get update && sudo apt-get install gradle -y
 
-    # Only build the Debug APK to bypass strict Lint and Unit Test errors
     - name: Build Debug APK
-      run: ./gradlew assembleDebug --stacktrace
+      run: gradle assembleDebug --stacktrace
 
-    # Automatically upload the built APK so you can download it directly from GitHub!
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
