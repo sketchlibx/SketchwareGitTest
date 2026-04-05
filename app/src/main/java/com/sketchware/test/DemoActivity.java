@@ -2,10 +2,6 @@ package com.sketchware.test;
 
 import android.animation.*;
 import android.app.*;
-import android.app.Activity;
-import android.app.DialogFragment;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.*;
 import android.content.res.*;
 import android.graphics.*;
@@ -21,13 +17,19 @@ import android.view.View.*;
 import android.view.animation.*;
 import android.webkit.*;
 import android.widget.*;
+import androidx.annotation.*;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import com.sketchware.test.databinding.*;
 import java.io.*;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 import org.json.*;
 
-public class DemoActivity extends Activity {
+public class DemoActivity extends AppCompatActivity {
 	
 	private DemoBinding binding;
 	

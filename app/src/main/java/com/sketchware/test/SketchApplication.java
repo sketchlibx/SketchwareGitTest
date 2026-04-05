@@ -26,12 +26,10 @@ public class SketchApplication extends Application {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         intent.putExtra("error", Log.getStackTraceString(throwable));
                         startActivity(intent);
-                        SketchLogger.broadcastLog(Log.getStackTraceString(throwable));
-                    Process.killProcess(Process.myPid());
+                        Process.killProcess(Process.myPid());
                         System.exit(1);
                     }
                 });
-        SketchLogger.startLogging();
         super.onCreate();
     }
 }
