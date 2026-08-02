@@ -1,24 +1,194 @@
-<LinearLayout
+<ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
+	android:layout_height="match_parent">
 	<LinearLayout
-		android:id="@+id/linear1"
+		android:id="@+id/linear5"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:padding="8dp"
-		android:gravity="center_horizontal|center_vertical"
+		android:layout_height="wrap_content"
+		android:padding="12dp"
 		android:orientation="vertical">
 		<TextView
-			android:id="@+id/textview1"
+			android:id="@+id/text1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="Git Push"
-			android:textSize="20sp"
+			android:text="Hello World"
+			android:textSize="18sp"
 			android:textStyle="bold" />
+		<EditText
+			android:id="@+id/edit1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:hint="Enter text" />
+		<Button
+			android:id="@+id/btn1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Click Me"
+			android:textSize="12sp" />
+		<ImageView
+			android:id="@+id/img1"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:src="@drawable/default_image"
+			android:scaleType="centerCrop" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recycler1"
+			android:layout_width="match_parent"
+			android:layout_height="120dp" />
+		<CheckBox
+			android:id="@+id/check1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Accept Terms"
+			android:textSize="12sp" />
+		<RadioGroup
+			android:id="@+id/radiogroup2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<RadioButton
+				android:id="@+id/radio1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:text="Option1" />
+			<RadioButton
+				android:id="@+id/radio2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:text="Option2" />
+		</RadioGroup>
+		<Switch
+			android:id="@+id/switch1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Enable Feature"
+			android:textSize="12sp" />
+		<ProgressBar
+			android:id="@+id/progressbar2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:indeterminate="true"
+			style="?android:progressBarStyle" />
+		<SeekBar
+			android:id="@+id/seekbar2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<Spinner
+			android:id="@+id/spinner1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:spinnerMode="dropdown" />
+		<LinearLayout
+			android:id="@+id/linear6"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/button9"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Left"
+				android:textSize="12sp"
+				android:layout_weight="1" />
+			<Button
+				android:id="@+id/button10"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Right"
+				android:textSize="12sp"
+				android:layout_weight="1" />
+		</LinearLayout>
+		<FrameLayout
+			android:id="@+id/frame_layout7"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:background="#EEEEEE">
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Overlay Text"
+				android:textSize="12sp"
+				android:layout_gravity="center_horizontal|center_vertical" />
+		</FrameLayout>
+		<RelativeLayout
+			android:id="@+id/relativelayout3"
+			android:layout_width="match_parent"
+			android:layout_height="100dp">
+			<TextView
+				android:id="@+id/rel_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Relative Text"
+				android:textSize="12sp" />
+			<Button
+				android:id="@+id/button11"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Below"
+				android:textSize="12sp"
+				android:layout_below="@id/rel_text" />
+		</RelativeLayout>
+		<GridLayout
+			android:id="@+id/grid_layout8"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:columnCount="2">
+			<Button
+				android:id="@+id/button16"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1"
+				android:textSize="12sp" />
+			<Button
+				android:id="@+id/button17"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="2"
+				android:textSize="12sp" />
+			<Button
+				android:id="@+id/button18"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="3"
+				android:textSize="12sp" />
+			<Button
+				android:id="@+id/button19"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="4"
+				android:textSize="12sp" />
+		</GridLayout>
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/constraintlayout"
+			android:layout_width="match_parent"
+			android:layout_height="150dp">
+			<TextView
+				android:id="@+id/ctext"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Constraint"
+				android:textSize="12sp"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintStart_toStartOf="parent" />
+			<Button
+				android:id="@+id/button20"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Click"
+				android:textSize="12sp"
+				app:layout_constraintTop_toBottomOf="ctext"
+				app:layout_constraintStart_toStartOf="parent" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+		<ListView
+			android:id="@+id/list1"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:choiceMode="none" />
 	</LinearLayout>
-</LinearLayout>
+</ScrollView>
